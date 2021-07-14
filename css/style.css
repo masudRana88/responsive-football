@@ -1,9 +1,14 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* =====================
          comon css
 ======================== */
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 main{
     display: flex;
@@ -102,9 +107,25 @@ nav ul li a{
     margin-top: 49px;
 }
 /* bannar hover effect */
+.nav-bar ul li a::after{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
 .bannar-images img:hover{
     transform: scale(110%);
     transition: 1.5s ease-in-out;
+}
+.login-btn:hover{
+    transform: scale(90%);
+    transition: 1s ease-in-out;
 }
 .watch-btn:hover{
     transform: scale(90%);
