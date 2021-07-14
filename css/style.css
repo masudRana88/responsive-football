@@ -119,21 +119,20 @@ nav ul li a{
 .nav-bar ul li a:hover::after{
     width: 100%;
 }
+.login-btn:hover{
+    transform: scale(90%);
+    transition: 1s ease-in-out;
+    background-color: #ff6600;
+}
 .bannar-images img:hover{
     transform: scale(110%);
     transition: 1.5s ease-in-out;
 }
-.login-btn:hover{
-    transform: scale(90%);
-    transition: 1s ease-in-out;
-}
+
 .watch-btn:hover{
     transform: scale(90%);
     transition: 1s ease-in-out;
-}
-.live-watch-btn:hover .bannar-images img{
-    transform: scale(110%);
-    transition: 1.5s ease-in-out;
+    background-color: #ff6600;
 }
 
 /* =====================
@@ -302,6 +301,7 @@ footer p{
 ======================== */
 /* for Mobile */
 @media only screen and (max-width:688px){
+    
     /* --------------------
          nav bar
     ---------------------- */
