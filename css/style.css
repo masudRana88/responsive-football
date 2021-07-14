@@ -301,7 +301,9 @@ footer p{
 ======================== */
 /* for Mobile */
 @media only screen and (max-width:688px){
-    
+    main{
+        overflow: hidden;
+    }
     /* --------------------
          nav bar
     ---------------------- */
@@ -357,21 +359,29 @@ footer p{
         Players
      -------------------------*/
     .players{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 47px;
         margin-bottom: 60px;
+    }
+    .player{
+        width: 80%;
     }
 
     /* -------------------------------
         highlights section
        ------------------------------- */
     .highlights{
-         display: block;
+         display: flex;
+         flex-direction: column;
+         margin-top: 20px;
     
     }
     .highlight-info{
-         width: 100%;
-         margin-left: 20px;
+         width: 95%;
+         margin-left: 5px;
     }
     .highlight-title{
         font-size: 30px;
@@ -481,12 +491,15 @@ footer p{
         grid-template-columns: 1fr 1fr;
         margin-top: 47px;
         margin-bottom: 60px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px ;
     }
     /* -------------------------------
         highlights section
        ------------------------------- */
        .highlights{
         display: block;
+        margin-top: 20px;
    
    }
    .highlight-info{
