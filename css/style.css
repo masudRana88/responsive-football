@@ -369,6 +369,12 @@ footer p{
     .player{
         width: 80%;
     }
+    .player-image{
+        width: 100%;
+    }
+    .player-image img{
+        width: 100%;
+    }
 
     /* -------------------------------
         highlights section
