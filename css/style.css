@@ -109,14 +109,14 @@ nav ul li a{
 /* bannar hover effect */
 .nav-bar ul li a::after{
     content: '';
-    width: 2px;
-    height: 2px;
-    background: black;
+    width: 0px;
+    height: 3px;
     display: block;
     margin: auto;
+    background: #E02C6D;
     transition: 0.5s;
 }
-.nav-bar ul li:hover::after{
+.nav-bar ul li a:hover::after{
     width: 100%;
 }
 .bannar-images img:hover{
